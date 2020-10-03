@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArcaneStars.AuthServiceHost", "ArcaneStars.AuthServiceHost\ArcaneStars.AuthServiceHost.csproj", "{793D16DA-1973-4D6C-9CCB-243428C67C7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcaneStars.Infrastructure", "ArcaneStars.Infrastructure\ArcaneStars.Infrastructure.csproj", "{8270F0BD-5C19-4A86-93CB-21689A514584}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserService", "UserService", "{180BFD88-AB95-4FB2-BE23-C663DA57BAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcaneStars.UserServiceHost", "ArcaneStars.UserServiceHost\ArcaneStars.UserServiceHost.csproj", "{2F25FA74-21D9-4DBE-A923-C54B6D2097E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcaneStars.UserService", "ArcaneStars.UserService\ArcaneStars.UserService.csproj", "{063339CF-9AFA-4237-8946-4B88F1476F42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +23,25 @@ Global
 		{793D16DA-1973-4D6C-9CCB-243428C67C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{793D16DA-1973-4D6C-9CCB-243428C67C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{793D16DA-1973-4D6C-9CCB-243428C67C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8270F0BD-5C19-4A86-93CB-21689A514584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8270F0BD-5C19-4A86-93CB-21689A514584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8270F0BD-5C19-4A86-93CB-21689A514584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8270F0BD-5C19-4A86-93CB-21689A514584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F25FA74-21D9-4DBE-A923-C54B6D2097E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F25FA74-21D9-4DBE-A923-C54B6D2097E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F25FA74-21D9-4DBE-A923-C54B6D2097E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F25FA74-21D9-4DBE-A923-C54B6D2097E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{063339CF-9AFA-4237-8946-4B88F1476F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063339CF-9AFA-4237-8946-4B88F1476F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063339CF-9AFA-4237-8946-4B88F1476F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063339CF-9AFA-4237-8946-4B88F1476F42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F25FA74-21D9-4DBE-A923-C54B6D2097E8} = {180BFD88-AB95-4FB2-BE23-C663DA57BAAA}
+		{063339CF-9AFA-4237-8946-4B88F1476F42} = {180BFD88-AB95-4FB2-BE23-C663DA57BAAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {52854D13-35E9-493B-9AF1-98E8AA67EA47}

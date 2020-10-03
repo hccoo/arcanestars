@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id:qq_route
+          uri:http://qq.com
+          order:2
+          predicates:
+            - Path=/qq
