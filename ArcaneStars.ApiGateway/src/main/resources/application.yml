@@ -1,9 +1,15 @@
+server:
+  port: 5008
 spring:
   cloud:
     gateway:
       routes:
-        - id:qq_route
-          uri:http://qq.com
-          order:2
+        - id: testservice_route
+          uri: http://localhost:61807
+          order: 2
           predicates:
-            - Path=/qq
+            - Path=/testservice/{path}
+          filters:
+            - AddRequestHeader=apikey, 123
+            - SetPath=/{path}
+            - Auth
