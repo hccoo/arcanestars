@@ -1,5 +1,4 @@
 ﻿using ArcaneStars.Service.Configurations;
-using ArcaneStars.Service.Domain.Aggregates;
 using ArcaneStars.UserService.Domains.Aggregates;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;

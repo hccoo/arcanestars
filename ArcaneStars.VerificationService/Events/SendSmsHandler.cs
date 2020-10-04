@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using MediatR;
 using ArcaneStars.Infrastructure.Events;
 using ArcaneStars.Service.Domain;
+using ArcaneStars.Service.Domain.Aggregates;
 using ArcaneStars.Service.Domain.Events;
 
 namespace ArcaneStars.Service.Events

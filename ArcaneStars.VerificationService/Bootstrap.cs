@@ -6,6 +6,8 @@ using AutoMapper;
 using ArcaneStars.Infrastructure.Events;
 using ArcaneStars.Service.Domain.Events;
 using ArcaneStars.Service.Events;
+using ArcaneStars.Service.Domain.Aggregates;
+using ArcaneStars.Service.Application.Dtos;
 
 namespace ArcaneStars.Service
 {

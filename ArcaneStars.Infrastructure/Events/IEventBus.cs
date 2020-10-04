@@ -118,22 +118,4 @@ namespace ArcaneStars.Infrastructure.Events
 
         #endregion
     }
-
-    public interface ITest : IUnitOfWork, IDisposable
-    {
-
-    }
-
-    public class Test : DisposableObject, ITest
-    {
-        public void Commit()
-        {
-            
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            
-        }
-    }
 }

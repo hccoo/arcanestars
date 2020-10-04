@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MediatR;
+using ArcaneStars.Service.Domain.Aggregates;
 using System.Threading;
 
 namespace ArcaneStars.Service.Domain.Events
@@ -16,7 +17,7 @@ namespace ArcaneStars.Service.Domain.Events
         public DateTime CreatedTime { get; set; }
         public string VerificationTo { get; set; }
         public string VerificationCode { get; set; }
-       // public BizCode BizCode { get; set; }
+        public BizCode BizCode { get; set; }
     }
 
     //[HandlesAsynchronously]

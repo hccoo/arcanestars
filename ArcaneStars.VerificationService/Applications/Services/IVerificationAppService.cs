@@ -24,19 +24,16 @@ namespace ArcaneStars.Service.Applications.Services
         readonly IVerificationRepository _verificationRepository;
         readonly IVerificationService _verificationService;
         readonly IEventBus _eventBus;
-        readonly ITest _test;
 
         public VerificationAppService(
             IVerificationRepository verificationRepository,
             IVerificationService verificationService,
             IDbUnitOfWork dbUnitOfWork,
-            IEventBus eventBus,
-            ITest test) : base(dbUnitOfWork)
+            IEventBus eventBus) : base(dbUnitOfWork)
         {
             _verificationRepository = verificationRepository;
             _verificationService = verificationService;
-            _eventBus = eventBus;// IocProvider.GetService<IEventBus>();
-            _test = test;
+            _eventBus = eventBus;
         }
 
         public void AddVerification(VerificationDTO verificationDTO)
