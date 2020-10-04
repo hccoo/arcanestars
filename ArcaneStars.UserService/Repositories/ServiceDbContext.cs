@@ -47,6 +47,8 @@ namespace ArcaneStars.Service.Repositories
             builder.Property(c => c.NickName).HasColumnName("nickname").HasMaxLength(80);
             builder.Property(c => c.UpdatedBy).HasColumnName("updated_by").HasMaxLength(80);
             builder.Property(c => c.UpdatedOn).HasColumnName("updated_on");
+            builder.Property(c => c.Channel).HasColumnName("channel");
+            builder.Property(c => c.Partition).HasColumnName("partition");
         }
     }
 

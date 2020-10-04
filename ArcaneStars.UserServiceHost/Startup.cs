@@ -10,8 +10,13 @@ using ArcaneStars.Service.Interceptors;
 using ArcaneStars.Service.Repositories;
 using ArcaneStars.ServiceHost.Configurations;
 using ArcaneStars.ServiceHost.Filters;
+using ArcaneStars.UserService.Applications.Services;
+using ArcaneStars.UserService.Configurations;
+using ArcaneStars.UserService.Domains.Repositories;
+using ArcaneStars.UserService.Repositories;
 using AspectCore.Configuration;
 using AspectCore.Extensions.DependencyInjection;
+using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -42,6 +47,7 @@ namespace ArcaneStars.UserServiceHost
             {
                 options.Filters.Add<ApiExceptionFilter>();
                 options.Filters.Add<LogFilter>();
+                options.Filters.Add<ApiKeyFilter>();
             }).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);//.AddJsonOptions(options => { options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss"; });
 
             services.Configure<ConnectionStrings>(Configuration.GetSection("ConnectionStrings"));
@@ -66,11 +72,12 @@ namespace ArcaneStars.UserServiceHost
             services.AddMediatR(typeof(Startup).Assembly, typeof(IEventBus).Assembly, typeof(IDomainEvent).Assembly);
             services.AddControllers();
 
-            //services.AddTransient<IVerificationAppService, VerificationAppService>();
-            //services.AddTransient<IMessageAppService, MessageAppService>();
-            //services.AddTransient<IVerificationService, VerificationService>();
-            //services.AddTransient<IVerificationRepository, VerificationRepository>();
-            services.AddTransient<IDomainEventHandler<VerificationCreatedEvent>, VerificationCreatedEventHandler>();
+            services.AddAutoMapper(typeof(AutoMapperConfig));
+
+            services.AddTransient<IUserAppService, UserAppService>();
+            services.AddTransient<IUserRepository, UserRepository>();
+
+            //services.AddTransient<IDomainEventHandler<VerificationCreatedEvent>, VerificationCreatedEventHandler>();
 
             services.ConfigureDynamicProxy(config =>
             {

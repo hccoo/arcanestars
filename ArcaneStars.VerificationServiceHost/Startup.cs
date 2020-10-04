@@ -47,6 +47,7 @@ namespace ArcaneStars.VerificationServiceHost
             {
                 options.Filters.Add<ApiExceptionFilter>();
                 options.Filters.Add<LogFilter>();
+                options.Filters.Add<ApiKeyFilter>();
             }).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);//.AddJsonOptions(options => { options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss"; });
 
             services.Configure<ConnectionStrings>(Configuration.GetSection("ConnectionStrings"));
