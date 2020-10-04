@@ -40,7 +40,7 @@ namespace Gooios.VerificationService.Proxies
                 string skin = templateId;
                 var apiUri = $"{apiUrl}?param={param}&phone={phone}&sign={sign}&skin={skin}";
                 ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(CheckValidationResult);
-                var client = _clientFactory.CreateClient("zk-backend");
+                var client = _clientFactory.CreateClient("arcanestars");
 
                 var req = new HttpRequestMessage(HttpMethod.Get, apiUri);
                 client.DefaultRequestHeaders.Add("Authorization", "APPCODE " + appCode);

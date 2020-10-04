@@ -15,6 +15,7 @@ using ArcaneStars.ServiceHost.Configurations;
 using ArcaneStars.ServiceHost.Filters;
 using AspectCore.Configuration;
 using AspectCore.Extensions.DependencyInjection;
+using Gooios.VerificationService.Proxies;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -57,6 +58,12 @@ namespace ArcaneStars.VerificationServiceHost
             services.AddScoped<IDbUnitOfWork, DbUnitOfWork>();
             services.AddScoped<IDbContextProvider, DbContextProvider>();
 
+            services.AddHttpClient("arcanestars", x =>
+            {
+                //x.BaseAddress = new Uri("http://localhost:8080");
+                x.DefaultRequestHeaders.Add("Cache-Control", "no-catch");
+            });
+
             services.AddDbContext<ServiceDbContext>(options =>
             {
                 options.UseMySql(Configuration.GetConnectionString("ServiceDb"));
@@ -73,6 +80,7 @@ namespace ArcaneStars.VerificationServiceHost
             services.AddTransient<IVerificationAppService, VerificationAppService>();
             services.AddTransient<IVerificationService, ArcaneStars.Service.Domain.Services.VerificationService>();
             services.AddTransient<IVerificationRepository, VerificationRepository>();
+            services.AddTransient<ISmsProxy, FegineSmsProxy>();
 
             services.AddTransient<IDomainEventHandler<VerificationCreatedEvent>, VerificationCreatedEventHandler>();
 
