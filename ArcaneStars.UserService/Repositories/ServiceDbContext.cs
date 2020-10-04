@@ -54,7 +54,7 @@ namespace ArcaneStars.Service.Repositories
     {
         public ServiceDbContext CreateDbContext(string[] args)
         {
-            return new ServiceDbContext(new DbContextOptionsBuilder().UseMySql("Database='user_service_db';Data Source='localhost';Port=3306;User Id='root';Password='!Qaz2wSX';charset='utf8';pooling=true").Options);
+            return new ServiceDbContext(new DbContextOptionsBuilder().UseMySql("Database='arcanestars_userservice_db';Data Source='localhost';Port=3306;User Id='root';Password='!Qaz2wSX';charset='utf8';pooling=true").Options);
         }
     }
 }

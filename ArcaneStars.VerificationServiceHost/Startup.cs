@@ -4,8 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using ArcaneStars.Infrastructure;
 using ArcaneStars.Infrastructure.Events;
+using ArcaneStars.Service.Applications.Services;
 using ArcaneStars.Service.Configurations;
 using ArcaneStars.Service.Domain.Events;
+using ArcaneStars.Service.Domain.Repositories;
+using ArcaneStars.Service.Domain.Services;
 using ArcaneStars.Service.Interceptors;
 using ArcaneStars.Service.Repositories;
 using ArcaneStars.ServiceHost.Configurations;
@@ -67,10 +70,10 @@ namespace ArcaneStars.VerificationServiceHost
             services.AddMediatR(typeof(Startup).Assembly, typeof(IEventBus).Assembly, typeof(IDomainEvent).Assembly);
             services.AddControllers();
 
-            //services.AddTransient<IVerificationAppService, VerificationAppService>();
-            //services.AddTransient<IMessageAppService, MessageAppService>();
-            //services.AddTransient<IVerificationService, VerificationService>();
-            //services.AddTransient<IVerificationRepository, VerificationRepository>();
+            services.AddTransient<IVerificationAppService, VerificationAppService>();
+            services.AddTransient<IVerificationService, ArcaneStars.Service.Domain.Services.VerificationService>();
+            services.AddTransient<IVerificationRepository, VerificationRepository>();
+
             services.AddTransient<IDomainEventHandler<VerificationCreatedEvent>, VerificationCreatedEventHandler>();
 
             services.ConfigureDynamicProxy(config =>
@@ -81,22 +84,29 @@ namespace ArcaneStars.VerificationServiceHost
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            InitializeDatabase(app);
 
             app.UseRouting();
 
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+        }
+        void InitializeDatabase(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<ServiceDbContext>();
+                context.Database.Migrate();
+            }
         }
     }
 }
