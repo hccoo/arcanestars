@@ -12,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using IdentityServer4.EntityFramework.DbContexts;
 using System;
 using IdentityServer4.EntityFramework.Mappers;
+using ArcaneStars.AuthServiceHost.Validators;
+using ArcaneStars.AuthServiceHost.Proxies;
 
 namespace ArcaneStars.AuthServiceHost
 {
@@ -28,6 +30,15 @@ namespace ArcaneStars.AuthServiceHost
         {
             var connectionString = Configuration.GetConnectionString("ServiceDb");
             var identityServerMigrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
+
+            services.Configure<ConnectionStrings>(Configuration.GetSection("ConnectionStrings"));
+            services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
+            services.AddOptions();
+
+            services.AddTransient<IUserServiceProxy, UserServiceProxy>();
+            services.AddTransient<IVerificationServiceProxy, VerificationServiceProxy>();
+            services.AddTransient<IServiceConfigurationAgent, ServiceConfiguration>();
+
             services.AddIdentityServer()
                     .AddSigningCredential(new X509Certificate2(@"./certificates/gooios.pfx", "!QAZ2wsx098", X509KeyStorageFlags.MachineKeySet | X509KeyStorageFlags.Exportable))
                     .AddTestUsers(DataConfiguration.Users.ToList())
@@ -40,7 +51,10 @@ namespace ArcaneStars.AuthServiceHost
                         options.ConfigureDbContext = builder => builder.UseMySql(connectionString, sql => sql.MigrationsAssembly(identityServerMigrationsAssembly));
                         options.EnableTokenCleanup = true;
                         options.TokenCleanupInterval = 7200;
-                    });
+                    })
+                    .AddResourceOwnerValidator<ResourceOwnerPasswordValidator>()
+                    .AddExtensionGrantValidator<VerificationCodeValidator>()
+                    .AddProfileService<ProfileService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -42,7 +42,11 @@ namespace ArcaneStars.UserService.Applications.Services
         {
             if (string.IsNullOrEmpty(model.UserName) && string.IsNullOrEmpty(model.Mobile)) throw new AppServiceException("User name and mobile can not be null.");
 
-            var user = UserFactory.CreateInstance(model.UserName, model.Mobile, model.Email, model.Password, model.NickName, operatedBy);
+            var user = _userRepository.GetFiltered(o => o.UserName == model.UserName).FirstOrDefault();
+
+            if (user != null) throw new AppServiceException("User name already exists in the db.");
+
+            user = UserFactory.CreateInstance(model.UserName, model.Mobile, model.Email, model.Password, model.NickName, operatedBy);
             _userRepository.Add(user);
             _dbUnitOfWork.Commit();
         }
@@ -52,7 +56,7 @@ namespace ArcaneStars.UserService.Applications.Services
             var user = _userRepository.GetFiltered(o => o.UserName == userName).FirstOrDefault();
             if (user == null) return null;
 
-            if (!user.CheckPassword(password)) return null;
+            //if (!user.CheckPassword(password)) return null;
 
             user.HidePassword();
             var result = _mapper.Map<UserDto>(user);

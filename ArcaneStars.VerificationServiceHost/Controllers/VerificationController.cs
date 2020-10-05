@@ -10,7 +10,7 @@ using Microsoft.Extensions.Primitives;
 
 namespace ArcaneStars.VerificationServiceHost.Controllers
 {
-    [Route("api/[controller]/v1")]
+    [Route("api/[controller]")]
     public class VerificationController : Controller
     {
         readonly IVerificationAppService _verificationAppService;
@@ -21,12 +21,15 @@ namespace ArcaneStars.VerificationServiceHost.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{bizcode}/{to}")]
+        [HttpGet]
+        [Route("v1/{bizcode}/{to}")]
         public VerificationDTO Get(BizCode bizCode, string to)
         {
             return _verificationAppService.GetAvailableVerification(bizCode, to);
         }
 
+        [HttpPatch]
+        [Route("v1")]
         public void Patch([FromBody]VerificationDTO model)
         {
             _verificationAppService.SetVerificationUsed(model);
@@ -34,6 +37,7 @@ namespace ArcaneStars.VerificationServiceHost.Controllers
 
         // POST api/values
         [HttpPost]
+        [Route("v1")]
         public void Post([FromBody]VerificationDTO model)
         {
             _verificationAppService.AddVerification(model);

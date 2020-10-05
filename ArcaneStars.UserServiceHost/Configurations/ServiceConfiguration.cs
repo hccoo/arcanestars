@@ -16,9 +16,9 @@ namespace ArcaneStars.ServiceHost.Configurations
 
         public string ConnectionString => _options.Value.ServiceDb;
 
-        public string ApiHeaderKey => _appSettingsOptions.Value.AppHeaderKey;
+        public string ApiHeaderKey => _appSettingsOptions.Value.ApiKey;
 
-        public string ApiHeaderValue => _appSettingsOptions.Value.AppHeaderValue;
+        public string ApiHeaderValue => _appSettingsOptions.Value.ApiValue;
     }
 
     public class ConnectionStrings
@@ -28,9 +28,9 @@ namespace ArcaneStars.ServiceHost.Configurations
 
     public class ApplicationSettings
     {
-        public string AppHeaderKey { get; set; }
+        public string ApiKey { get; set; }
 
-        public string AppHeaderValue { get; set; }
+        public string ApiValue { get; set; }
         
     }
 }
