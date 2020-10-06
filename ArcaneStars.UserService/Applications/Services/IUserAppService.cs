@@ -56,7 +56,7 @@ namespace ArcaneStars.UserService.Applications.Services
             var user = _userRepository.GetFiltered(o => o.UserName == userName).FirstOrDefault();
             if (user == null) return null;
 
-            //if (!user.CheckPassword(password)) return null;
+            if (!user.CheckPassword(password)) return null;
 
             user.HidePassword();
             var result = _mapper.Map<UserDto>(user);

@@ -4,6 +4,15 @@ spring:
   cloud:
     gateway:
       routes:
+        - id: verificationservice_addverification_route
+          uri: http://localhost:5002
+          order: 1
+          predicates:
+            - Path=/verificationservice/verification/v1
+            - Method=POST
+          filters:
+            - AddRequestHeader=apikey, 63e960be918111e799168906c7e9f002
+            - SetPath=/api/verification/v1
         - id: testservice_route
           uri: http://localhost:61807
           order: 2
@@ -12,4 +21,32 @@ spring:
           filters:
             - AddRequestHeader=apikey, 123
             - SetPath=/{path}
+            - Auth
+        - id: userservice_checkuser_route
+          uri: http://localhost:5001
+          order: 3
+          predicates:
+            - Path=/userservice/checkuser/v1
+            - Method=POST
+          filters:
+            - AddRequestHeader=apikey, 63e960be918111e799168826c7e9f001
+            - SetPath=/api/user/check/v1
+        - id: userservice_checkuser_route
+          uri: http://localhost:5001
+          order: 3
+          predicates:
+            - Path=/userservice/adduser/v1
+            - Method=POST
+          filters:
+            - AddRequestHeader=apikey, 63e960be918111e799168826c7e9f001
+            - SetPath=/api/user/v1
+        - id: userservice_getuser_route
+          uri: http://localhost:5001
+          order: 4
+          predicates:
+            - Path=/userservice/getuser/v1
+            - Method=GET
+          filters:
+            - AddRequestHeader=apikey, 63e960be918111e799168826c7e9f001
+            - SetPath=/api/user/v1
             - Auth

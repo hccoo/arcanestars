@@ -20,8 +20,8 @@ namespace ArcaneStars.UserServiceHost.Controllers
         }
 
         // GET: api/<controller>/v1/username
-        [HttpGet("{username}")]
-        [Route("v1/{username}")]
+        [HttpGet]
+        [Route("v1")]
         public async Task<UserDto> Get(string userName) => _userAppService.Get(userName);
 
         // POST api/<controller>
