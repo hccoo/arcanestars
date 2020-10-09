@@ -26,6 +26,8 @@ namespace ArcaneStars.JPService.Domains.Aggregates
 
         public DateTime? UpdatedOn { get; set; }
 
+        public long RecommendId { get; set; }
+
         public void GenerateId()
         {
             Id = IDGenerator.GenerateId();

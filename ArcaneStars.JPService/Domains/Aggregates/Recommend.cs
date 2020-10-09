@@ -15,6 +15,8 @@ namespace ArcaneStars.JPService.Domains.Aggregates
 
         public string Description { get; set; }
 
+        public long QuestionId { get; set; }
+
         public string CreatedBy { get; set; }
 
         public DateTime CreatedOn { get; set; }

@@ -23,5 +23,6 @@ namespace ArcaneStars.JPService.Applications.Dtos
 
         public DateTime? UpdatedOn { get; set; }
 
+        public IEnumerable<QuestionTagDto> Tags { get; set; }
     }
 }

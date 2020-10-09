@@ -15,7 +15,7 @@ namespace ArcaneStars.JPService.Applications.Dtos
         /// </summary>
         public string Experience { get; set; }
 
-        public Suggestion Suggestion { get; set; }
+        public Suggestion? Suggestion { get; set; }
 
         public string Title { get; set; }
 

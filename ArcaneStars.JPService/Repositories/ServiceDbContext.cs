@@ -44,6 +44,7 @@ namespace ArcaneStars.Service.Repositories
             builder.Property(c => c.UpdatedBy).HasColumnName("updated_by").HasMaxLength(80);
             builder.Property(c => c.UpdatedOn).HasColumnName("updated_on");
             builder.Property(c => c.Title).HasColumnName("title").HasMaxLength(200).IsRequired();
+            builder.Property(c => c.RecommendId).HasColumnName("recommend_id").IsRequired();
             builder.Property(c => c.Suggestion).HasColumnName("suggestion").IsRequired();
             builder.Property(c => c.Experience).HasColumnName("experience").HasMaxLength(2000);
             builder.Property(c => c.Remark).HasColumnName("remark").HasMaxLength(1000);
@@ -95,6 +96,7 @@ namespace ArcaneStars.Service.Repositories
             builder.Property(c => c.Description).HasColumnName("description").HasMaxLength(2000);
             builder.Property(c => c.GetUrl).HasColumnName("get_url").HasMaxLength(1000);
             builder.Property(c => c.Price).HasColumnName("price");
+            builder.Property(c => c.QuestionId).HasColumnName("question_id").IsRequired();
             builder.Property(c => c.Title).HasColumnName("title").HasMaxLength(200).IsRequired();
         }
     }
@@ -130,6 +132,7 @@ namespace ArcaneStars.Service.Repositories
             builder.Property(c => c.UpdatedOn).HasColumnName("updated_on");
             builder.Property(c => c.Name).HasColumnName("name").HasMaxLength(80);
             builder.Property(c => c.Value).HasColumnName("value").HasMaxLength(1000).IsRequired();
+            builder.Property(c => c.RecommendId).HasColumnName("recommend_id").IsRequired();
         }
     }
 

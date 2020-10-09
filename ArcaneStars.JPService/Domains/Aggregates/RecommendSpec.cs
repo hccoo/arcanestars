@@ -11,6 +11,8 @@ namespace ArcaneStars.JPService.Domains.Aggregates
 
         public string Value { get; set; }
 
+        public long RecommendId { get; set; }
+
         public string CreatedBy { get; set; }
 
         public DateTime CreatedOn { get; set; }
@@ -22,7 +24,7 @@ namespace ArcaneStars.JPService.Domains.Aggregates
 
     public static class RecommendSpecFactory
     {
-        public static RecommendSpec CreateInstance(string name, string value, string operatedBy)
+        public static RecommendSpec CreateInstance(string name, string value, long recommendId, string operatedBy)
         {
             var now = DateTime.Now;
             var instance = new RecommendSpec
@@ -32,7 +34,8 @@ namespace ArcaneStars.JPService.Domains.Aggregates
                 Name = name,
                 UpdatedBy = operatedBy,
                 UpdatedOn = now,
-                Value = value
+                Value = value,
+                RecommendId = recommendId
             };
 
             return instance;
