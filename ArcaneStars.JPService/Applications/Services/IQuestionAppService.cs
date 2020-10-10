@@ -14,11 +14,11 @@ namespace ArcaneStars.JPService.Applications.Services
 {
     public interface IQuestionAppService : IApplicationServiceContract
     {
-        void AddQuestion(QuestionDto question, IEnumerable<string> tags, string operatedBy);
+        void AddQuestion(QuestionDto question, string operatedBy);
 
-        void UpdateQuestion(QuestionDto question, IEnumerable<string> tags, string operatedBy);
+        void UpdateQuestion(QuestionDto question, string operatedBy);
 
-        PagingResultDto<QuestionDto> GetQuestions(string key, string tag, int pageIndex, int pageSize);
+        PagingResultDto<QuestionDto> Get(string key, string tag, int pageIndex, int pageSize);
 
         QuestionDto Get(long id);
     }
@@ -43,13 +43,14 @@ namespace ArcaneStars.JPService.Applications.Services
             _questionTagRepository = questionTagRepository;
         }
 
-        public void AddQuestion(QuestionDto question, IEnumerable<string> tags, string operatedBy)
+        public void AddQuestion(QuestionDto question, string operatedBy)
         {
             var entity = QuestionFactory.CreateInstance(question.Subject, question.Remark, operatedBy);
             _questionRepository.Add(entity);
+            var tags = question.Tags;
             foreach (var item in tags)
             {
-                var tag = QuestionTagFactory.CreateInstance(item, entity.Id);
+                var tag = QuestionTagFactory.CreateInstance(item.Name, entity.Id);
                 _questionTagRepository.Add(tag);
             }
             _dbUnitOfWork.Commit();
@@ -61,13 +62,13 @@ namespace ArcaneStars.JPService.Applications.Services
             if (question == null) return null;
 
             var entityTags = _questionTagRepository.GetFiltered(o => o.QuestionId == id).ToList();
-            var tags = entityTags.Select(item=>_mapper.Map<QuestionTagDto>(item)).ToList();
-            var result =  _mapper.Map<QuestionDto>(question);
+            var tags = entityTags.Select(item => _mapper.Map<QuestionTagDto>(item)).ToList();
+            var result = _mapper.Map<QuestionDto>(question);
             result.Tags = tags;
             return result;
         }
 
-        public PagingResultDto<QuestionDto> GetQuestions(string key, string tag, int pageIndex, int pageSize)
+        public PagingResultDto<QuestionDto> Get(string key, string tag, int pageIndex, int pageSize)
         {
             var questions = _questionRepository.Get(key, tag, pageIndex, pageSize, out long total).ToList();
             var data = questions.Select(q => _mapper.Map<QuestionDto>(q)).ToList();
@@ -80,7 +81,7 @@ namespace ArcaneStars.JPService.Applications.Services
             };
         }
 
-        public void UpdateQuestion(QuestionDto question, IEnumerable<string> tags, string operatedBy)
+        public void UpdateQuestion(QuestionDto question, string operatedBy)
         {
             var entity = _questionRepository.Get(question.Id);
             if (entity == null) throw new AppServiceException("No object found.");
@@ -98,9 +99,10 @@ namespace ArcaneStars.JPService.Applications.Services
                     _questionTagRepository.Remove(item);
                 }
             }
+            IEnumerable<QuestionTagDto> tags = question.Tags ?? new List<QuestionTagDto>();
             foreach (var item in tags)
             {
-                var tag = QuestionTagFactory.CreateInstance(item, question.Id);
+                var tag = QuestionTagFactory.CreateInstance(item.Name, question.Id);
                 _questionTagRepository.Add(tag);
             }
             _questionRepository.Update(entity);

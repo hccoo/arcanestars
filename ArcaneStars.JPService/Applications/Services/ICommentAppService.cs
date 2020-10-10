@@ -32,13 +32,13 @@ namespace ArcaneStars.JPService.Applications.Services
         CommentDto Get(long id);
     }
 
-    public class UserAppService : ApplicationServiceContract, ICommentAppService
+    public class CommentAppService : ApplicationServiceContract, ICommentAppService
     {
         readonly IEventBus _eventBus;
         readonly IMapper _mapper;
         readonly ICommentRepository _commentRepository;
 
-        public UserAppService(
+        public CommentAppService(
             IMapper mapper,
             IDbUnitOfWork dbUnitOfWork,
             IEventBus eventBus) : base(dbUnitOfWork)

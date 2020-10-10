@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using ArcaneStars.Infrastructure;
 using ArcaneStars.Infrastructure.Events;
+using ArcaneStars.JPService.Applications.Services;
 using ArcaneStars.JPService.Configurations;
+using ArcaneStars.JPService.Domains.Repositories;
 using ArcaneStars.Service.Configurations;
 using ArcaneStars.Service.Domain.Events;
 using ArcaneStars.Service.Interceptors;
@@ -71,8 +73,15 @@ namespace ArcaneStars.JPServiceHost
 
             services.AddAutoMapper(typeof(AutoMapperConfig));
 
-            //services.AddTransient<IUserAppService, UserAppService>();
-            //services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IQuestionAppService, QuestionAppService>();
+            services.AddTransient<IQuestionRepository, QuestionRepository>();
+            services.AddTransient<ICommentAppService, CommentAppService>();
+            services.AddTransient<ICommentRepository, CommentRepository>();
+            services.AddTransient<IRecommendAppService, RecommendAppService>();
+            services.AddTransient<IRecommendRepository, RecommendRepository>();
+
+            services.AddTransient<IRecommendMediaRepository, RecommendMediaRepository>();
+            services.AddTransient<IRecommendSpecRepository, RecommendSpecRepository>();;
 
             //services.AddTransient<IDomainEventHandler<VerificationCreatedEvent>, VerificationCreatedEventHandler>();
 
