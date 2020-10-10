@@ -1,0 +1,18 @@
+2020-10-10 14:45:38.9826 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.UserServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 14:45:38.9946 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.UserServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 14:45:39.0966 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 14:45:39.1080 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.UserServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 14:45:39.1173 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.UserServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 14:45:39.1173 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.UserServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 14:45:39.2114 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 14:45:39.2236 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.UserServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 14:45:39.2236 Info Message Template Auto Format enabled
+2020-10-10 14:45:39.3318 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 14:45:39.3318 Info Adding target FileTarget(Name=infofile)
+2020-10-10 14:45:39.3559 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 14:45:39.3671 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 14:45:39.3671 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 14:45:39.4318 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.UserServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 14:45:39.4543 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 14:45:39.4847 Info Configuration initialized.
+2020-10-10 14:45:39.4958 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False

@@ -21,6 +21,8 @@ namespace ArcaneStars.JPService.Applications.Dtos
 
         public string Remark { get; set; }
 
+        public long RecommendId { get; set; }
+
         public string CreatedBy { get; set; }
 
         public DateTime CreatedOn { get; set; }

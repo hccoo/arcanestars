@@ -33,7 +33,7 @@ namespace ArcaneStars.JPService.Domains.Aggregates
 
     public static class RecommendFactory
     {
-        public static Recommend CreateInstance(string title, string url, decimal? price, string description, string operatedBy)
+        public static Recommend CreateInstance(string title, string url, decimal? price, string description, long questionId, string operatedBy)
         {
             var now = DateTime.Now;
             var instance = new Recommend
@@ -45,7 +45,8 @@ namespace ArcaneStars.JPService.Domains.Aggregates
                 Description = description,
                 Price = price,
                 UpdatedBy = operatedBy,
-                UpdatedOn = now
+                UpdatedOn = now,
+                QuestionId = questionId
             };
 
             instance.GenerateId();

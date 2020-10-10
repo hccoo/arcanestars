@@ -47,7 +47,7 @@ namespace ArcaneStars.JPService.Applications.Services
 
         public void AddRecommend(RecommendDto model, string operatedBy)
         {
-            var recommend = RecommendFactory.CreateInstance(model.Title, model.GetUrl, model.Price, model.Description, operatedBy);
+            var recommend = RecommendFactory.CreateInstance(model.Title, model.GetUrl, model.Price, model.Description,model.QuestionId, operatedBy);
             _recommendRepository.Add(recommend);
             if (model.Medias != null && model.Medias.Any())
             {

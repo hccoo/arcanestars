@@ -41,15 +41,17 @@ namespace ArcaneStars.JPService.Applications.Services
         public CommentAppService(
             IMapper mapper,
             IDbUnitOfWork dbUnitOfWork,
-            IEventBus eventBus) : base(dbUnitOfWork)
+            IEventBus eventBus,
+            ICommentRepository commentRepository) : base(dbUnitOfWork)
         {
             _eventBus = eventBus;
             _mapper = mapper;
+            _commentRepository = commentRepository;
         }
 
         public void AddComment(CommentDto model, string operatedBy)
         {
-            var comment = CommentFactory.CreateInstance(model.Title, model.Remark, model.Experience, model.Suggestion ?? Suggestion.CON, operatedBy);
+            var comment = CommentFactory.CreateInstance(model.Title, model.Remark, model.Experience, model.Suggestion ?? Suggestion.CON,model.RecommendId, operatedBy);
             _commentRepository.Add(comment);
             _dbUnitOfWork.Commit();
         }
@@ -69,7 +71,7 @@ namespace ArcaneStars.JPService.Applications.Services
             if (mark == "PRO") querable = querable.Where(o => o.Suggestion == Suggestion.PRO);
             if (mark == "CON") querable = querable.Where(o => o.Suggestion == Suggestion.CON);
 
-            var data = querable.Skip((pageIndex - 1) * pageSize).Skip(pageSize).ToList().Select(item=>_mapper.Map<CommentDto>(item));
+            var data = querable.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList().Select(item=>_mapper.Map<CommentDto>(item)).ToList();
             var total = querable.Count();
             return new PagingResultDto<CommentDto>
             {

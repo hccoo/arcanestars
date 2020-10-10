@@ -16,3 +16,363 @@
 2020-10-10 11:08:11.4677 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
 2020-10-10 11:08:11.5369 Info Configuration initialized.
 2020-10-10 11:08:11.5635 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 14:41:15.3002 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 14:41:15.3002 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 14:41:15.4185 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 14:41:15.4290 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 14:41:15.4290 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 14:41:15.4448 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 14:41:15.5165 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 14:41:15.5304 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 14:41:15.5450 Info Message Template Auto Format enabled
+2020-10-10 14:41:15.6172 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 14:41:15.6172 Info Adding target FileTarget(Name=infofile)
+2020-10-10 14:41:15.6347 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 14:41:15.6347 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 14:41:15.6514 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 14:41:15.6920 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 14:41:15.7106 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 14:41:15.7341 Info Configuration initialized.
+2020-10-10 14:41:15.7434 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 14:52:17.3447 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 14:52:17.3557 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 14:52:17.4160 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 14:52:17.4337 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 14:52:17.4437 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 14:52:17.4437 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 14:52:17.4734 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 14:52:17.4884 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 14:52:17.4884 Info Message Template Auto Format enabled
+2020-10-10 14:52:17.5877 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 14:52:17.6006 Info Adding target FileTarget(Name=infofile)
+2020-10-10 14:52:17.6006 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 14:52:17.6221 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 14:52:17.6336 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 14:52:17.6823 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 14:52:17.7048 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 14:52:17.7330 Info Configuration initialized.
+2020-10-10 14:52:17.7436 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 14:53:45.3843 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 14:53:45.4108 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 14:53:45.4521 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 14:53:45.4637 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 14:53:45.4765 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 14:53:45.4880 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 14:53:45.5110 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 14:53:45.5249 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 14:53:45.5403 Info Message Template Auto Format enabled
+2020-10-10 14:53:45.6347 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 14:53:45.6444 Info Adding target FileTarget(Name=infofile)
+2020-10-10 14:53:45.6444 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 14:53:45.6609 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 14:53:45.6609 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 14:53:45.7089 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 14:53:45.7263 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 14:53:45.7498 Info Configuration initialized.
+2020-10-10 14:53:45.7588 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 15:32:41.6195 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 15:32:41.6421 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 15:32:41.6868 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 15:32:41.6993 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 15:32:41.7104 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 15:32:41.7104 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 15:32:41.7410 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 15:32:41.7410 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 15:32:41.7670 Info Message Template Auto Format enabled
+2020-10-10 15:32:41.8471 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 15:32:41.8471 Info Adding target FileTarget(Name=infofile)
+2020-10-10 15:32:41.8659 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 15:32:41.8659 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 15:32:41.8836 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 15:32:41.9241 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 15:32:41.9427 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 15:32:41.9658 Info Configuration initialized.
+2020-10-10 15:32:41.9738 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 15:53:11.1697 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 15:53:11.1812 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 15:53:11.2248 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 15:53:11.2417 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 15:53:11.2536 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 15:53:11.2536 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 15:53:11.2924 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 15:53:11.3074 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 15:53:11.3231 Info Message Template Auto Format enabled
+2020-10-10 15:53:11.4281 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 15:53:11.4281 Info Adding target FileTarget(Name=infofile)
+2020-10-10 15:53:11.4474 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 15:53:11.4573 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 15:53:11.4573 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 15:53:11.5219 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 15:53:11.5522 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 15:53:11.5792 Info Configuration initialized.
+2020-10-10 15:53:11.5892 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 15:54:35.5667 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 15:54:35.5667 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 15:54:35.6183 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 15:54:35.6299 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 15:54:35.6299 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 15:54:35.6496 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 15:54:35.6731 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 15:54:35.6826 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 15:54:35.6949 Info Message Template Auto Format enabled
+2020-10-10 15:54:35.7686 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 15:54:35.7686 Info Adding target FileTarget(Name=infofile)
+2020-10-10 15:54:35.7883 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 15:54:35.7883 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 15:54:35.8060 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 15:54:35.8475 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 15:54:35.8658 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 15:54:35.8901 Info Configuration initialized.
+2020-10-10 15:54:35.8990 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 17:31:08.1808 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 17:31:08.1917 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 17:31:08.2448 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 17:31:08.2637 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 17:31:08.2762 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 17:31:08.2887 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 17:31:08.3176 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 17:31:08.3343 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 17:31:08.3518 Info Message Template Auto Format enabled
+2020-10-10 17:31:08.4346 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 17:31:08.4456 Info Adding target FileTarget(Name=infofile)
+2020-10-10 17:31:08.4456 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 17:31:08.4636 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 17:31:08.4725 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 17:31:08.5127 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 17:31:08.5304 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 17:31:08.5525 Info Configuration initialized.
+2020-10-10 17:31:08.5525 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 17:50:57.0759 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 17:50:57.0924 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 17:50:57.1547 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 17:50:57.1736 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 17:50:57.1901 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 17:50:57.2058 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 17:50:57.2423 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 17:50:57.2638 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 17:50:57.2833 Info Message Template Auto Format enabled
+2020-10-10 17:50:57.4188 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 17:50:57.4304 Info Adding target FileTarget(Name=infofile)
+2020-10-10 17:50:57.4414 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 17:50:57.4414 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 17:50:57.4626 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 17:50:57.5081 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 17:50:57.5275 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 17:50:57.5610 Info Configuration initialized.
+2020-10-10 17:50:57.5710 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 17:52:18.3492 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 17:52:18.3702 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 17:52:18.4124 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 17:52:18.4270 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 17:52:18.4270 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 17:52:18.4518 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 17:52:18.4761 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 17:52:18.4886 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 17:52:18.5138 Info Message Template Auto Format enabled
+2020-10-10 17:52:18.6113 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 17:52:18.6208 Info Adding target FileTarget(Name=infofile)
+2020-10-10 17:52:18.6309 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 17:52:18.6309 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 17:52:18.6499 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 17:52:18.6907 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 17:52:18.7099 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 17:52:18.7346 Info Configuration initialized.
+2020-10-10 17:52:18.7431 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 19:02:32.3194 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 19:02:32.3194 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 19:02:32.3544 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 19:02:32.3544 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 19:02:32.3666 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 19:02:32.3666 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 19:02:32.3847 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 19:02:32.3955 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 19:02:32.3955 Info Message Template Auto Format enabled
+2020-10-10 19:02:32.4408 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 19:02:32.4577 Info Adding target FileTarget(Name=infofile)
+2020-10-10 19:02:32.4577 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 19:02:32.4577 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 19:02:32.4761 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 19:02:32.5014 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 19:02:32.5135 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 19:02:32.5274 Info Configuration initialized.
+2020-10-10 19:02:32.5274 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 19:03:46.0774 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 19:03:46.0843 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 19:03:46.1128 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 19:03:46.1225 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 19:03:46.1287 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 19:03:46.1287 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 19:03:46.1532 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 19:03:46.1621 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 19:03:46.1621 Info Message Template Auto Format enabled
+2020-10-10 19:03:46.2075 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 19:03:46.2246 Info Adding target FileTarget(Name=infofile)
+2020-10-10 19:03:46.2246 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 19:03:46.2246 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 19:03:46.2401 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 19:03:46.2638 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 19:03:46.2763 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 19:03:46.2892 Info Configuration initialized.
+2020-10-10 19:03:46.2892 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 19:13:56.0126 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 19:13:56.0126 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 19:13:56.0432 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 19:13:56.0499 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 19:13:56.0499 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 19:13:56.0499 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 19:13:56.0816 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 19:13:56.0816 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 19:13:56.1008 Info Message Template Auto Format enabled
+2020-10-10 19:13:56.1436 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 19:13:56.1626 Info Adding target FileTarget(Name=infofile)
+2020-10-10 19:13:56.1626 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 19:13:56.1773 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 19:13:56.1773 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 19:13:56.2119 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 19:13:56.2254 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 19:13:56.2417 Info Configuration initialized.
+2020-10-10 19:13:56.2417 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 19:30:12.9855 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 19:30:12.9983 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 19:30:13.0402 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 19:30:13.0504 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 19:30:13.0504 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 19:30:13.0504 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 19:30:13.0759 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 19:30:13.0835 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 19:30:13.0835 Info Message Template Auto Format enabled
+2020-10-10 19:30:13.1285 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 19:30:13.1470 Info Adding target FileTarget(Name=infofile)
+2020-10-10 19:30:13.1470 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 19:30:13.1601 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 19:30:13.1601 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 19:30:13.1860 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 19:30:13.1975 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 19:30:13.2126 Info Configuration initialized.
+2020-10-10 19:30:13.2126 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 19:36:14.1567 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 19:36:14.1681 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 19:36:14.1944 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 19:36:14.1944 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 19:36:14.2085 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 19:36:14.2085 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 19:36:14.2290 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 19:36:14.2290 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 19:36:14.2450 Info Message Template Auto Format enabled
+2020-10-10 19:36:14.2894 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 19:36:14.2894 Info Adding target FileTarget(Name=infofile)
+2020-10-10 19:36:14.3019 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 19:36:14.3019 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 19:36:14.3019 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 19:36:14.3339 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 19:36:14.3339 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 19:36:14.3662 Info Configuration initialized.
+2020-10-10 19:36:14.3662 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 21:07:50.3812 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:07:50.4105 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:07:50.4498 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 21:07:50.4616 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 21:07:50.4616 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:07:50.4767 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:07:50.4926 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 21:07:50.4926 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 21:07:50.5100 Info Message Template Auto Format enabled
+2020-10-10 21:07:50.5591 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 21:07:50.5660 Info Adding target FileTarget(Name=infofile)
+2020-10-10 21:07:50.5660 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 21:07:50.5817 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 21:07:50.5817 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 21:07:50.6156 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 21:07:50.6156 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 21:07:50.6426 Info Configuration initialized.
+2020-10-10 21:07:50.6490 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 21:16:27.7908 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:16:27.8039 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:16:27.8422 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 21:16:27.8516 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 21:16:27.8516 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:16:27.8684 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:16:27.8843 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 21:16:27.8975 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 21:16:27.9098 Info Message Template Auto Format enabled
+2020-10-10 21:16:27.9721 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 21:16:27.9721 Info Adding target FileTarget(Name=infofile)
+2020-10-10 21:16:27.9721 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 21:16:27.9947 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 21:16:27.9947 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 21:16:28.0360 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 21:16:28.0360 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 21:16:28.0650 Info Configuration initialized.
+2020-10-10 21:16:28.0710 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 21:30:09.6034 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:30:09.6141 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:30:09.6466 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 21:30:09.6616 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 21:30:09.6616 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:30:09.6795 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:30:09.6927 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 21:30:09.6927 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 21:30:09.7165 Info Message Template Auto Format enabled
+2020-10-10 21:30:09.7922 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 21:30:09.7922 Info Adding target FileTarget(Name=infofile)
+2020-10-10 21:30:09.8060 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 21:30:09.8060 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 21:30:09.8205 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 21:30:09.8534 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 21:30:09.8670 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 21:30:09.8845 Info Configuration initialized.
+2020-10-10 21:30:09.8845 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 21:35:05.7445 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:35:05.7445 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:35:05.7819 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 21:35:05.7943 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 21:35:05.8014 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:35:05.8014 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:35:05.8255 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 21:35:05.8358 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 21:35:05.8358 Info Message Template Auto Format enabled
+2020-10-10 21:35:05.8955 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 21:35:05.9165 Info Adding target FileTarget(Name=infofile)
+2020-10-10 21:35:05.9253 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 21:35:05.9253 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 21:35:05.9421 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 21:35:05.9662 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 21:35:05.9784 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 21:35:05.9941 Info Configuration initialized.
+2020-10-10 21:35:05.9941 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 21:39:53.2262 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:39:53.2262 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:39:53.2634 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 21:39:53.2708 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 21:39:53.2708 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:39:53.2862 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:39:53.3048 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 21:39:53.3048 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 21:39:53.3239 Info Message Template Auto Format enabled
+2020-10-10 21:39:53.3631 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 21:39:53.3793 Info Adding target FileTarget(Name=infofile)
+2020-10-10 21:39:53.3793 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 21:39:53.3793 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 21:39:53.3985 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 21:39:53.4299 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 21:39:53.4404 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 21:39:53.4577 Info Configuration initialized.
+2020-10-10 21:39:53.4577 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False
+2020-10-10 21:41:18.0927 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:41:18.1013 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-10-10 21:41:18.1316 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-10-10 21:41:18.1316 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-10-10 21:41:18.1467 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:41:18.1467 Info Loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-10-10 21:41:18.1710 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.3.1751. Product version: 4.9.3. GlobalAssemblyCache: False
+2020-10-10 21:41:18.1856 Info Auto loading assembly file: D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-10-10 21:41:18.1939 Info Message Template Auto Format enabled
+2020-10-10 21:41:18.2422 Info Adding target FileTarget(Name=debugfile)
+2020-10-10 21:41:18.2422 Info Adding target FileTarget(Name=infofile)
+2020-10-10 21:41:18.2550 Info Adding target FileTarget(Name=errorfile)
+2020-10-10 21:41:18.2550 Info Adding target FileTarget(Name=ownFile-web)
+2020-10-10 21:41:18.2550 Info Adding target NullTarget(Name=blackhole)
+2020-10-10 21:41:18.2998 Info Validating config: TargetNames=debugfile, infofile, errorfile, ownFile-web, ConfigItems=90, FilePath=D:\ArcaneStars\ArcaneStars.JPServiceHost\bin\Debug\netcoreapp3.1\NLog.config
+2020-10-10 21:41:18.3151 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2020-10-10 21:41:18.3340 Info Configuration initialized.
+2020-10-10 21:41:18.3340 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.5.12092. Product version: 4.7.5+ed343d5690d9c97a96fcff430e240e2d7c31a8d7. GlobalAssemblyCache: False

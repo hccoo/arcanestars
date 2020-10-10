@@ -51,8 +51,11 @@ class AuthGatewayFilter: GatewayFilter, Ordered {
         //处理收到的token（令牌),错误则返回对象
         var ctx:SecurityContext? = null;
         var claimsSet: JWTClaimsSet? = null;
+        var userName="";
         try {
             claimsSet = jwtProcessor.process(token, ctx);
+            userName = claimsSet.claims["user_name"].toString();
+            //exchange.request.headers.add("user_name",userName)
             authorized = true;
         } catch (e: Exception) {
             exchange.response.setStatusCode(HttpStatus.UNAUTHORIZED);
@@ -70,8 +73,14 @@ class AuthGatewayFilter: GatewayFilter, Ordered {
         var jo: JSONObject = JSONObject(claimsSet.toJSONObject());
         //String role = jo.getString("role");
 
-        if(authorized)
-            return chain!!.filter(exchange)
+        if(authorized) {
+            var host = exchange.getRequest().mutate().header("user_name", userName).build();
+            //将现在的request 变成 change对象
+            var build = exchange.mutate().request(host).build();
+            return chain!!.filter(build);
+
+            //return chain!!.filter(exchange)
+        }
         else
         {
             exchange!!.response.setStatusCode(HttpStatus.UNAUTHORIZED);

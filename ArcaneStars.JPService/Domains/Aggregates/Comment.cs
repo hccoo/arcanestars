@@ -42,7 +42,7 @@ namespace ArcaneStars.JPService.Domains.Aggregates
 
     public static class CommentFactory
     {
-        public static Comment CreateInstance(string title, string remark, string experience, Suggestion suggestion, string operatedBy)
+        public static Comment CreateInstance(string title, string remark, string experience, Suggestion suggestion, long recommendId, string operatedBy)
         {
             var now = DateTime.Now;
 
@@ -55,7 +55,8 @@ namespace ArcaneStars.JPService.Domains.Aggregates
                 Title = title,
                 Experience = experience,
                 Remark = remark,
-                Suggestion = suggestion
+                Suggestion = suggestion,
+                RecommendId = recommendId
             };
 
             instance.GenerateId();

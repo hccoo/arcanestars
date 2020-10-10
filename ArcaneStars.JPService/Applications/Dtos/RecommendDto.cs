@@ -24,6 +24,8 @@ namespace ArcaneStars.JPService.Applications.Dtos
 
         public DateTime? UpdatedOn { get; set; }
 
+        public long QuestionId { get; set; }
+
         public IEnumerable<RecommendMediaDto> Medias { get; set; }
 
         public IEnumerable<RecommendSpecDto> Specs { get; set; }

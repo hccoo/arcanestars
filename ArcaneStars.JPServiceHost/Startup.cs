@@ -81,7 +81,8 @@ namespace ArcaneStars.JPServiceHost
             services.AddTransient<IRecommendRepository, RecommendRepository>();
 
             services.AddTransient<IRecommendMediaRepository, RecommendMediaRepository>();
-            services.AddTransient<IRecommendSpecRepository, RecommendSpecRepository>();;
+            services.AddTransient<IRecommendSpecRepository, RecommendSpecRepository>();
+            services.AddTransient<IQuestionTagRepository, QuestionTagRepository>();
 
             //services.AddTransient<IDomainEventHandler<VerificationCreatedEvent>, VerificationCreatedEventHandler>();
 
