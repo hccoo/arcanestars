@@ -23,9 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArcaneStars.VerificationSer
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JPService", "JPService", "{E157DF3D-273D-45C5-8745-DB6E7F2ED1CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcaneStars.JPService", "ArcaneStars.JPService\ArcaneStars.JPService.csproj", "{AE6A06FD-CE73-4283-8365-26B315E0B2F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArcaneStars.JPService", "ArcaneStars.JPService\ArcaneStars.JPService.csproj", "{AE6A06FD-CE73-4283-8365-26B315E0B2F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcaneStars.JPServiceHost", "ArcaneStars.JPServiceHost\ArcaneStars.JPServiceHost.csproj", "{0C6A46D3-4D31-45A4-B46E-CFD80F862EAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArcaneStars.JPServiceHost", "ArcaneStars.JPServiceHost\ArcaneStars.JPServiceHost.csproj", "{0C6A46D3-4D31-45A4-B46E-CFD80F862EAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
