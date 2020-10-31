@@ -4,21 +4,21 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using NLog;
+using Serilog;
 using System.Linq;
 
 namespace ArcaneStars.ServiceHost.Filters
 {
     public class LogFilter : IActionFilter
     {
-        Logger logger = LogManager.GetLogger("LogFilter");
         public void OnActionExecuted(ActionExecutedContext context)
         {
-            logger.Info("Hello logger£¡~~~~~");
+            Log.Information($"call {context.ActionDescriptor.DisplayName}");
 
             var ret = context.Result as ObjectResult;
             var objstr = JsonConvert.SerializeObject(ret);
 
-            logger.Info($"result:{objstr}");
+            Log.Information($"{context.ActionDescriptor.DisplayName} result:{objstr}");
         }
 
         public void OnActionExecuting(ActionExecutingContext context)
@@ -28,7 +28,7 @@ namespace ArcaneStars.ServiceHost.Filters
             var actionName = context.ActionDescriptor.DisplayName;
 
             var patams = string.Join(";", parameters.Select(o => string.Join("=", o.Key, o.Value)));
-            logger.Info($"parameters:{patams}");
+            Log.Information($"parameters:{patams}");
         }
     }
 }

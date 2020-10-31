@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ArcaneStars.Infrastructure.Logs;
 using ArcaneStars.Service;
+using ArcaneStars.Service.Configurations;
 using AspectCore.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -17,6 +19,7 @@ namespace ArcaneStars.UserServiceHost
         {
             var host = CreateHostBuilder(args).Build();
             IocProvider.Container = host.Services;
+            SerilogProvider.StartWithMysql(IocProvider.GetService<IServiceConfigurationAgent>()?.LogConnectionString,"userservice_log");
             host.Run();
         }
 

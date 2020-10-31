@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Transactions;
 using ArcaneStars.Infrastructure;
 using ArcaneStars.Infrastructure.Transactions;
+using Serilog;
 
 namespace ArcaneStars.Service.Interceptors
 {
@@ -36,7 +37,7 @@ namespace ArcaneStars.Service.Interceptors
             }
             catch (Exception ex)
             {
-                //Log the exception
+                Log.Error(ex, ex.Message);
                 throw;
             }
         }

@@ -16,6 +16,8 @@ namespace ArcaneStars.ServiceHost.Configurations
 
         public string ConnectionString => _options.Value.ServiceDb;
 
+        public string LogConnectionString => _options.Value.LogDb;
+
         public string ApiHeaderKey => _appSettingsOptions.Value.ApiKey;
 
         public string ApiHeaderValue => _appSettingsOptions.Value.ApiValue;
@@ -24,6 +26,8 @@ namespace ArcaneStars.ServiceHost.Configurations
     public class ConnectionStrings
     {
         public string ServiceDb { get; set; }
+
+        public string LogDb { get; set; }
     }
 
     public class ApplicationSettings

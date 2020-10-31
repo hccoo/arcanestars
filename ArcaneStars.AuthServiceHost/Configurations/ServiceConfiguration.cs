@@ -10,6 +10,8 @@ namespace ArcaneStars.AuthServiceHost.Configurations
     {
         string ConnectionString { get; }
 
+        string LogConnectionString { get; }
+
         string ApiKey { get; }
 
         string ApiValue { get; }
@@ -40,6 +42,8 @@ namespace ArcaneStars.AuthServiceHost.Configurations
 
         public string ConnectionString => _options.Value.ServiceDb;
 
+        public string LogConnectionString => _options.Value.LogDb;
+
         public string ApiKey => _appSettingsOptions.Value.ApiKey;
 
         public string ApiValue => _appSettingsOptions.Value.ApiValue;
@@ -60,6 +64,8 @@ namespace ArcaneStars.AuthServiceHost.Configurations
     public class ConnectionStrings
     {
         public string ServiceDb { get; set; }
+
+        public string LogDb { get; set; }
     }
 
     public class ApplicationSettings

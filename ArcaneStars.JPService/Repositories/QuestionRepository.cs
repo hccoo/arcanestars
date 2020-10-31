@@ -18,17 +18,31 @@ namespace ArcaneStars.Service.Repositories
 
         public IEnumerable<Question> Get(string key, string tag, int pageIndex, int pageSize, out long total)
         {
-            var countSql = @" select count(1) from question_tags qt left join questions q on qt.question_id=q.id where 1=1 ";
-            if (!string.IsNullOrEmpty(key)) countSql += @" and subject like @key ";
-            if (!string.IsNullOrEmpty(tag)) countSql += @" and qt.name = @tag ";
+            //var countSql = @" select count(1) from question_tags qt left join questions q on qt.question_id=q.id where 1=1 ";
+            //if (!string.IsNullOrEmpty(key)) countSql += @" and subject like @key ";
+            //if (!string.IsNullOrEmpty(tag)) countSql += @" and qt.name = @tag ";
 
-            total = ServiceDbContext.Database.QuerySingleVal<long>(countSql, new MySqlParameter("@key","%"+key+"%"), new  MySqlParameter("@tag",tag));
+            //total = ServiceDbContext.Database.QuerySingleVal<long>(countSql, new MySqlParameter("@key", "%" + key + "%"), new MySqlParameter("@tag", tag));
+
+            //var querySql = @" select q.id Id, q.subject Subject, q.remark Remark,q.created_by CreatedBy, q.created_on CreatedOn, q.updated_by UpdatedBy, q.updated_on UpdatedOn  from question_tags qt left join questions q on qt.question_id=q.id where 1=1 ";
+            //if (!string.IsNullOrEmpty(key)) querySql += @" and subject like @key ";
+            //if (!string.IsNullOrEmpty(tag)) querySql += @" and qt.name = @tag ";
+
+            //var questions = ServiceDbContext.Database.SqlQuery<Question>(querySql, new MySqlParameter("@key", "%" + key + "%"), new MySqlParameter("@tag", tag)).ToList();
+
+            //return questions;
+
+            var countSql = @" select count(1) from question_tags qt left join questions q on qt.question_id=q.id where 1=1 ";
+            if (!string.IsNullOrEmpty(key)) countSql += $@" and subject like '%{key}%' ";
+            if (!string.IsNullOrEmpty(tag)) countSql += $@" and qt.name = '{tag}' ";
+
+            total = ServiceDbContext.Database.QuerySingleVal<long>(countSql);
 
             var querySql = @" select q.id Id, q.subject Subject, q.remark Remark,q.created_by CreatedBy, q.created_on CreatedOn, q.updated_by UpdatedBy, q.updated_on UpdatedOn  from question_tags qt left join questions q on qt.question_id=q.id where 1=1 ";
-            if (!string.IsNullOrEmpty(key)) querySql += @" and subject like @key ";
-            if (!string.IsNullOrEmpty(tag)) querySql += @" and qt.name = @tag ";
-            
-            var questions = ServiceDbContext.Database.SqlQuery<Question>(querySql, new MySqlParameter("@key", "%" + key + "%"), new MySqlParameter("@tag", tag)).ToList();
+            if (!string.IsNullOrEmpty(key)) querySql += $@" and subject like '%{key}%' ";
+            if (!string.IsNullOrEmpty(tag)) querySql += $@" and qt.name = '{tag}' ";
+
+            var questions = ServiceDbContext.Database.SqlQuery<Question>(querySql).ToList();
 
             return questions;
 

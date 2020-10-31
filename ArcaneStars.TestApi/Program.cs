@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace ArcaneStars.TestApi
 {
@@ -13,6 +14,10 @@ namespace ArcaneStars.TestApi
     {
         public static void Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration()
+                        .WriteTo.Console()
+                        .WriteTo.MySQL("Database='arcanestars_log_db';Data Source='localhost';Port=3306;User Id='root';Password='!Qaz2wSX';charset='utf8';pooling=true")
+                        .CreateLogger();
             CreateHostBuilder(args).Build().Run();
         }
 

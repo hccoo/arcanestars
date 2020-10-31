@@ -31,7 +31,7 @@ class AuthGatewayFilter: GatewayFilter, Ordered {
             return exchange.response.setComplete();
         }
 
-        var jwkEndpoint = "http://localhost:5000/.well-known/openid-configuration/jwks";
+        var jwkEndpoint = "http://authservice.arcanestars.com/.well-known/openid-configuration/jwks";
         var token = processToken(accessToken);
 
         var jwtProcessor:ConfigurableJWTProcessor<SecurityContext> = DefaultJWTProcessor();

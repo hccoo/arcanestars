@@ -1,6 +1,7 @@
 ﻿using AspectCore.DynamicProxy;
 using Newtonsoft.Json;
 using NLog;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,10 +13,8 @@ namespace ArcaneStars.Service.Interceptors
     {
         public override async Task Invoke(AspectContext context, AspectDelegate next)
         {
-            var logger = LogManager.GetLogger("ProxyInterceptor");
-
             var parameters = JsonConvert.SerializeObject(context.Parameters);
-            logger.Info($"Call api {context.ServiceMethod.DeclaringType.FullName}->{context.ServiceMethod.Name} Paramters：{parameters}");
+            Log.Information($"Call api {context.ServiceMethod.DeclaringType.FullName}->{context.ServiceMethod.Name} Paramters：{parameters}");
 
             await next(context);
 
@@ -23,13 +22,13 @@ namespace ArcaneStars.Service.Interceptors
             {
                 if (context.ServiceMethod.ReturnType.FullName == "System.Threading.Tasks.Task")
                 {
-                    logger.Info($"Result value: void");
+                    Log.Information($"Result value: void");
                 }
                 else
                 {
                     var result = await context.UnwrapAsyncReturnValue();
                     var res = JsonConvert.SerializeObject(result);
-                    logger.Info($"Result value: {res}");
+                    Log.Information($"Result value: {res}");
                 }
             }
             else
@@ -37,7 +36,7 @@ namespace ArcaneStars.Service.Interceptors
                 if (context.ReturnValue != null)
                 {
                     var res = JsonConvert.SerializeObject(context.ReturnValue);
-                    logger.Info($"Result value: {res}");
+                    Log.Information($"Result value: {res}");
                 }
             }
         }

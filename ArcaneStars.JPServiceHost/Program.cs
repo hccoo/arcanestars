@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ArcaneStars.Infrastructure.Logs;
+using ArcaneStars.Service.Configurations;
 
 namespace ArcaneStars.JPServiceHost
 {
@@ -19,6 +21,7 @@ namespace ArcaneStars.JPServiceHost
             var host = CreateHostBuilder(args).Build();
             IocProvider.Container = host.Services;
             IDProvider.InitIDWorker();
+            SerilogProvider.StartWithMysql(IocProvider.GetService<IServiceConfigurationAgent>()?.LogConnectionString,"jpservice_log");
             host.Run();
         }
 

@@ -5,7 +5,7 @@ spring:
     gateway:
       routes:
         - id: verificationservice_addverification_route
-          uri: http://localhost:5002
+          uri: http://172.17.0.16:8002
           order: 1
           predicates:
             - Path=/verificationservice/verification/v1
@@ -23,7 +23,7 @@ spring:
             - SetPath=/{path}
             - Auth
         - id: userservice_checkuser_route
-          uri: http://localhost:5001
+          uri: http://172.17.0.16:8001
           order: 3
           predicates:
             - Path=/userservice/checkuser/v1
@@ -32,7 +32,7 @@ spring:
             - AddRequestHeader=apikey, 63e960be918111e799168826c7e9f001
             - SetPath=/api/user/check/v1
         - id: userservice_checkuser_route
-          uri: http://localhost:5001
+          uri: http://172.17.0.16:8001
           order: 4
           predicates:
             - Path=/userservice/adduser/v1
@@ -41,7 +41,7 @@ spring:
             - AddRequestHeader=apikey, 63e960be918111e799168826c7e9f001
             - SetPath=/api/user/v1
         - id: userservice_getuser_route
-          uri: http://localhost:5001
+          uri: http://172.17.0.16:8001
           order: 5
           predicates:
             - Path=/userservice/getuser/v1
@@ -51,7 +51,7 @@ spring:
             - SetPath=/api/user/v1
             - Auth
         - id: jpservice_addquestion_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 6
           predicates:
             - Path=/jpservice/addquestion/v1
@@ -61,7 +61,7 @@ spring:
             - SetPath=/api/question/v1
             - Auth
         - id: jpservice_updatequestion_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 7
           predicates:
             - Path=/jpservice/updatequestion/v1
@@ -71,7 +71,7 @@ spring:
             - SetPath=/api/question/v1
             - Auth
         - id: jpservice_getquestion_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 8
           predicates:
             - Path=/jpservice/getquestion/v1
@@ -80,7 +80,7 @@ spring:
             - AddRequestHeader=apikey, 63e960be918111e799168826c7e9f003
             - SetPath=/api/question/v1
         - id: jpservice_getquestion_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 8
           predicates:
             - Path=/jpservice/getquestions/v1
@@ -89,7 +89,7 @@ spring:
             - AddRequestHeader=apikey, 63e960be918111e799168826c7e9f003
             - SetPath=/api/questions/v1
         - id: jpservice_addrecommend_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 9
           predicates:
             - Path=/jpservice/addrecommend/v1
@@ -99,7 +99,7 @@ spring:
             - SetPath=/api/recommend/v1
             - Auth
         - id: jpservice_updaterecommend_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 9
           predicates:
             - Path=/jpservice/updaterecommend/v1
@@ -109,7 +109,7 @@ spring:
             - SetPath=/api/recommend/v1
             - Auth
         - id: jpservice_getrecommend_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 10
           predicates:
             - Path=/jpservice/getrecommend/v1
@@ -118,7 +118,7 @@ spring:
             - AddRequestHeader=apikey, 63e960be918111e799168826c7e9f003
             - SetPath=/api/recommend/v1
         - id: jpservice_getrecommends_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 11
           predicates:
             - Path=/jpservice/getrecommends/v1
@@ -127,7 +127,7 @@ spring:
             - AddRequestHeader=apikey, 63e960be918111e799168826c7e9f003
             - SetPath=/api/recommends/v1
         - id: jpservice_addcomment_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 12
           predicates:
             - Path=/jpservice/addcomment/v1
@@ -137,7 +137,7 @@ spring:
             - SetPath=/api/comment/v1
             - Auth
         - id: jpservice_updatecomment_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 13
           predicates:
             - Path=/jpservice/updatecomment/v1
@@ -147,7 +147,7 @@ spring:
             - SetPath=/api/comment/v1
             - Auth
         - id: jpservice_getcommend_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 13
           predicates:
             - Path=/jpservice/getcomment/v1
@@ -156,7 +156,7 @@ spring:
             - AddRequestHeader=apikey, 63e960be918111e799168826c7e9f003
             - SetPath=/api/comment/v1
         - id: jpservice_getcomments_route
-          uri: http://localhost:5003
+          uri: http://172.17.0.16:8003
           order: 14
           predicates:
             - Path=/jpservice/getcomments/v1

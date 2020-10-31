@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Primitives;
+using Serilog;
 
 namespace ArcaneStars.TestApi.Controllers
 {
@@ -27,6 +28,9 @@ namespace ArcaneStars.TestApi.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            
+            Log.Information("log.................................................");
+
             Request.Headers.TryGetValue("apikey", out StringValues vals);
             var apiKey = vals.FirstOrDefault();
             var rng = new Random();

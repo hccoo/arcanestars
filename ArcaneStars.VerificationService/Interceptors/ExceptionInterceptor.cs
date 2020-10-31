@@ -1,6 +1,7 @@
 ﻿using AspectCore.DynamicProxy;
 using Microsoft.Extensions.Logging;
 using NLog;
+using Serilog;
 using System;
 using System.Threading.Tasks;
 
@@ -10,15 +11,13 @@ namespace ArcaneStars.Service.Interceptors
     {
         public override async Task Invoke(AspectContext context, AspectDelegate next)
         {
-            Logger logger = LogManager.GetLogger("ExceptionInterceptor");
             try
             {
                 await next(context);
             }
             catch (Exception ex)
             {
-                logger.Error(ex.Message);
-                logger.Error(ex.InnerException?.Message ?? "");
+                Log.Error(ex,ex.Message);
                 throw;
             }
         }
