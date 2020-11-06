@@ -2,3 +2,10 @@
 */bin/*
 */obj/*
 */.mvn/*
+ZKEACMS/
+OrchardCore-dev/
+*.jar
+*.zip
+ArcaneStars.JPServiceHost/Properties/PublishProfiles/FolderProfile.pubxml
+ArcaneStars.JPServiceHost/Properties/PublishProfiles/FolderProfile.pubxml.user
+ArcaneStars.ApiGateway/src/main/resources/META-INF/MANIFEST.MF
