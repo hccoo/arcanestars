@@ -23,11 +23,11 @@ namespace ArcaneStars.Service.Events
             string templateId = "";
 
             var verification = notification.Source as Verification;
-            if (verification.BizCode == BizCode.Register) templateId = "33592";
+            if (verification.BizCode == BizCode.Register) templateId = "";
 
-            if (verification.BizCode == BizCode.ForgetPassword) templateId = "33593";
+            if (verification.BizCode == BizCode.ForgetPassword) templateId = "";
 
-            if (verification.BizCode == BizCode.Login) templateId = "900677";
+            if (verification.BizCode == BizCode.Login) templateId = "";
 
             if (!string.IsNullOrEmpty(templateId))
                 _smsProxy.SendVerificationCode(verification.Code, verification.To, templateId);
