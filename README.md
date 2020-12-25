@@ -6,3 +6,6 @@ DDD微服务实践项目，实现领域事件、领域服务、聚合、仓储�
 
 ArcaneStars.AuthServiceHost   -- Identity Server4
 ArcaneStars.ApiGateway        -- SpringCloud Gateway
+
+
+展望：后续会集成 Nacos，kafka，rabbitmq等组件
