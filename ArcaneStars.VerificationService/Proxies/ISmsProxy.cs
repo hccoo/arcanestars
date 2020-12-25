@@ -15,16 +15,16 @@ namespace Gooios.VerificationService.Proxies
     }
 
     /// <summary>
-    /// 注册模板：33592
-    /// 忘记密码模板：33593
+    /// 注册模板：
+    /// 忘记密码模板：
     /// </summary>
     public class FegineSmsProxy : ISmsProxy
     {
         private readonly IHttpClientFactory _clientFactory;
 
-        const string apiUrl = "https://feginesms.market.alicloudapi.com/codeNotice";
-        const string appCode = "0dc41b203b32448d886495b08f8090ef";
-        const string signContent = "500467";//"38358";
+        const string apiUrl = "";
+        const string appCode = "";
+        const string signContent = "";//"";
         //const string templateId = "";
 
         public FegineSmsProxy(IHttpClientFactory clientFactory)
